@@ -1,0 +1,401 @@
+{
+  "Tomato___Bacterial_Spot": {
+    "display_name": "Bacterial Spot",
+    "scientific_name": "Xanthomonas campestris pv. vesicatoria",
+    "severity": "High",
+    "is_healthy": false,
+    "description": "Bacterial Spot is a serious disease caused by the bacterium Xanthomonas campestris pv. vesicatoria, affecting both leaves and fruits of tomato plants. It thrives in warm, wet conditions and spreads rapidly through rain splash, contaminated tools, and infected seeds. Left untreated, it can cause significant defoliation and fruit loss.",
+    "symptoms": [
+      "Small, water-soaked spots on leaves that turn brown with yellow halos",
+      "Lesions on fruit appear as raised, scab-like spots that may crack",
+      "Leaf spots coalesce causing large necrotic areas and defoliation",
+      "Dark, greasy-looking spots on stems and petioles",
+      "Premature leaf drop leading to sunscald on exposed fruits"
+    ],
+    "immediate_actions": [
+      "Remove and destroy all infected plant material immediately",
+      "Avoid working in the field when plants are wet to prevent spread",
+      "Disinfect all tools with 10% bleach solution or 70% alcohol between uses",
+      "Apply copper-based bactericide as soon as symptoms are noticed"
+    ],
+    "chemical_treatment": [
+      "Apply copper hydroxide (e.g., Kocide 3000) at 1.25–2.0 lb/acre every 7–10 days",
+      "Use copper oxychloride sprays during wet weather conditions",
+      "Combine copper bactericides with mancozeb for improved efficacy",
+      "Apply fixed copper sprays (copper sulfate pentahydrate) at label-recommended rates"
+    ],
+    "organic_treatment": [
+      "Spray copper-based organic formulations (OMRI-listed copper octanoate) every 5–7 days",
+      "Apply Bacillus subtilis-based biocontrol agents (e.g., Serenade) as a preventative",
+      "Use neem oil sprays to reduce bacterial populations on leaf surfaces",
+      "Apply hydrogen peroxide-based sprays (diluted 3%) as a surface disinfectant"
+    ],
+    "prevention": [
+      "Use certified disease-free or hot-water-treated seeds (50°C for 25 minutes)",
+      "Practice crop rotation of at least 2–3 years with non-solanaceous crops",
+      "Use drip irrigation instead of overhead watering to keep foliage dry",
+      "Plant resistant or tolerant tomato varieties when available",
+      "Maintain adequate plant spacing for good air circulation"
+    ],
+    "recovery_time": "3–5 weeks with consistent copper treatment and favorable dry conditions"
+  },
+  "Tomato___Early_Blight": {
+    "display_name": "Early Blight",
+    "scientific_name": "Alternaria solani",
+    "severity": "Medium",
+    "is_healthy": false,
+    "description": "Early Blight is a very common fungal disease of tomatoes caused by Alternaria solani, typically appearing on older, lower leaves first before progressing upward. It is favored by warm temperatures (24–29°C), high humidity, and alternating wet and dry periods. The disease can cause significant defoliation and reduce fruit quality and yield.",
+    "symptoms": [
+      "Dark brown to black lesions with distinctive concentric rings forming a 'bull's-eye' pattern",
+      "Lesions are initially small (3–4 mm) and appear on older, lower leaves first",
+      "Yellow chlorotic halo surrounding individual lesions",
+      "Affected leaves turn yellow, wither, and drop prematurely",
+      "Dark, sunken lesions may also appear on stems and at the stem end of fruit"
+    ],
+    "immediate_actions": [
+      "Remove and dispose of heavily infected lower leaves immediately",
+      "Apply a fungicide (chlorothalonil or mancozeb) as soon as symptoms are detected",
+      "Mulch around the base of plants to prevent soil splash onto lower leaves",
+      "Improve air circulation by pruning and staking plants"
+    ],
+    "chemical_treatment": [
+      "Apply chlorothalonil (e.g., Bravo 720) at 1.5 pt/acre every 7–10 days",
+      "Use mancozeb-based fungicides (e.g., Dithane M-45) on a 7-day spray schedule",
+      "Apply azoxystrobin (e.g., Quadris) or pyraclostrobin for systemic protection",
+      "Rotate between different fungicide classes to prevent resistance development"
+    ],
+    "organic_treatment": [
+      "Apply copper-based fungicides (copper sulfate or copper hydroxide) every 7 days",
+      "Use Bacillus subtilis biocontrol sprays (e.g., Serenade Garden) preventatively",
+      "Spray neem oil (azadirachtin) solution every 7–14 days as a preventive measure",
+      "Apply a baking soda solution (1 tbsp per gallon of water) to alter leaf surface pH"
+    ],
+    "prevention": [
+      "Practice crop rotation of at least 3 years with non-solanaceous crops",
+      "Use disease-resistant tomato varieties where available",
+      "Water at the base of plants using drip irrigation to keep foliage dry",
+      "Remove and compost plant debris after harvest to reduce inoculum",
+      "Maintain balanced soil nutrition, especially adequate phosphorus and potassium"
+    ],
+    "recovery_time": "2–3 weeks with proper treatment and dry weather conditions"
+  },
+  "Tomato___Late_Blight": {
+    "display_name": "Late Blight",
+    "scientific_name": "Phytophthora infestans",
+    "severity": "Critical",
+    "is_healthy": false,
+    "description": "Late Blight is one of the most devastating diseases of tomatoes and potatoes, caused by the oomycete pathogen Phytophthora infestans — the same organism responsible for the Irish Potato Famine. It spreads extremely rapidly under cool, wet conditions (10–25°C with high humidity) and can destroy an entire crop within days if untreated. The disease spreads through airborne sporangia and infected plant tissue.",
+    "symptoms": [
+      "Large, irregularly shaped, water-soaked lesions on leaves that rapidly turn brown-black",
+      "White, cottony sporulation (mycelium) visible on the underside of leaves in humid conditions",
+      "Dark brown, greasy lesions on stems that cause plant collapse",
+      "Brown, firm, greasy rot on fruit that extends deep into the flesh",
+      "Rapid wilting and collapse of entire plants in severe infections"
+    ],
+    "immediate_actions": [
+      "Remove and destroy all infected plants or plant parts immediately — do not compost",
+      "Apply a protectant fungicide (chlorothalonil or mancozeb) immediately across the field",
+      "Avoid overhead irrigation and minimize leaf wetness",
+      "Alert neighboring farms as the disease spreads rapidly via airborne spores"
+    ],
+    "chemical_treatment": [
+      "Apply mancozeb (e.g., Dithane M-45) as a protectant at 5-7 day intervals",
+      "Use systemic fungicides such as metalaxyl + mancozeb (e.g., Ridomil Gold MZ) for curative action",
+      "Apply cymoxanil + mancozeb (e.g., Curzate M) for both protective and curative activity",
+      "Use fluopicolide (e.g., Presidio) or mandipropamid (e.g., Revus) in rotation to prevent resistance"
+    ],
+    "organic_treatment": [
+      "Apply copper-based sprays (copper hydroxide or copper sulfate) every 5–7 days",
+      "Use Bacillus amyloliquefaciens-based biocontrol (e.g., Double Nickel) as a preventive",
+      "Apply phosphorous acid (potassium phosphite) to boost plant systemic resistance",
+      "Remove infected tissue promptly and maintain strict field sanitation"
+    ],
+    "prevention": [
+      "Plant certified disease-free transplants and use resistant varieties (e.g., Defiant, Mountain Merit)",
+      "Avoid overhead irrigation; use drip irrigation to keep foliage dry",
+      "Ensure excellent air circulation through proper spacing and staking",
+      "Monitor weather forecasts and apply fungicides prophylactically before high-risk periods",
+      "Practice strict crop rotation and remove all volunteer solanaceous plants"
+    ],
+    "recovery_time": "Disease progression can be halted in 1–2 weeks with aggressive treatment, but severely infected plants may not recover"
+  },
+  "Tomato___Leaf_Mold": {
+    "display_name": "Leaf Mold",
+    "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+    "severity": "Medium",
+    "is_healthy": false,
+    "description": "Leaf Mold is a fungal disease caused by Passalora fulva that primarily affects tomatoes grown in humid, enclosed environments such as greenhouses and high-tunnels. It thrives at relative humidity above 85% and temperatures between 22–25°C. While it rarely kills plants outright, severe infections cause significant defoliation and reduce photosynthetic capacity and yield.",
+    "symptoms": [
+      "Pale greenish-yellow spots on the upper surface of leaves",
+      "Olive-green to brown velvety mold growth on the underside of leaves corresponding to upper spots",
+      "Infected leaves curl, wither, and drop prematurely",
+      "In severe cases, blossoms and fruit can also be affected with dark, leathery rot",
+      "Disease progresses from lower, older leaves upward through the canopy"
+    ],
+    "immediate_actions": [
+      "Immediately reduce greenhouse humidity by improving ventilation and reducing watering",
+      "Remove and dispose of heavily infected leaves",
+      "Apply a fungicide spray to slow disease spread",
+      "Increase plant spacing to improve airflow within the canopy"
+    ],
+    "chemical_treatment": [
+      "Apply chlorothalonil (e.g., Bravo) every 7–10 days as a protectant",
+      "Use azoxystrobin or trifloxystrobin (strobilurin-class) fungicides for systemic control",
+      "Apply difenoconazole or tebuconazole (triazole-class) for curative action",
+      "Rotate fungicide classes to prevent resistance buildup"
+    ],
+    "organic_treatment": [
+      "Apply copper-based fungicides (copper sulfate or copper hydroxide) every 7 days",
+      "Use potassium bicarbonate sprays to create an alkaline leaf surface unfavorable to the fungus",
+      "Apply neem oil (1–2% solution) every 7–14 days as a preventive measure",
+      "Use Trichoderma-based biocontrol agents to suppress fungal growth"
+    ],
+    "prevention": [
+      "Maintain relative humidity below 85% in greenhouses through ventilation and heating",
+      "Use resistant tomato varieties (many modern greenhouse varieties carry Cf resistance genes)",
+      "Avoid overhead watering; use drip irrigation or sub-irrigation",
+      "Ensure adequate plant spacing and remove lower leaves to improve air circulation",
+      "Sanitize greenhouses and remove plant debris thoroughly between crops"
+    ],
+    "recovery_time": "2–4 weeks with improved environmental control and fungicide treatment"
+  },
+  "Tomato___Septoria_Leaf_Spot": {
+    "display_name": "Septoria Leaf Spot",
+    "scientific_name": "Septoria lycopersici",
+    "severity": "Medium",
+    "is_healthy": false,
+    "description": "Septoria Leaf Spot is one of the most destructive fungal diseases of tomato foliage, caused by Septoria lycopersici. It commonly appears after the first fruit set and spreads rapidly during periods of warm, wet weather. The disease progresses from lower leaves upward and can cause severe defoliation, exposing fruit to sunscald and reducing overall yield.",
+    "symptoms": [
+      "Numerous small, circular spots (3–6 mm) with dark brown margins and grey-white centers on leaves",
+      "Tiny dark brown to black pycnidia (fruiting bodies) visible in the center of spots with a hand lens",
+      "Yellowing of surrounding leaf tissue leading to leaf death and drop",
+      "Disease starts on older, lower leaves and moves upward through the canopy",
+      "Severe defoliation leaving plants with only a few leaves at the top"
+    ],
+    "immediate_actions": [
+      "Remove and destroy heavily infected lower leaves immediately",
+      "Apply a fungicide (chlorothalonil or mancozeb) at the first sign of disease",
+      "Apply organic mulch around plants to prevent soil splash spreading spores",
+      "Stake or cage plants to keep foliage off the ground"
+    ],
+    "chemical_treatment": [
+      "Apply chlorothalonil (e.g., Bravo 720) every 7–10 days as a protectant fungicide",
+      "Use mancozeb (e.g., Dithane M-45) on a weekly schedule during wet weather",
+      "Apply azoxystrobin or pyraclostrobin (strobilurins) for systemic and protective activity",
+      "Use propiconazole or tebuconazole (triazoles) for curative treatment of active infections"
+    ],
+    "organic_treatment": [
+      "Apply copper sulfate or copper hydroxide sprays every 7 days",
+      "Use Bacillus subtilis-based biocontrol (e.g., Serenade) as a preventive spray",
+      "Apply neem oil solution (2%) every 7–10 days to suppress spore germination",
+      "Use potassium bicarbonate sprays to inhibit fungal development on leaf surfaces"
+    ],
+    "prevention": [
+      "Practice a 3-year crop rotation with non-solanaceous crops",
+      "Remove all plant debris at the end of the season to eliminate overwintering inoculum",
+      "Use drip irrigation and avoid wetting foliage during watering",
+      "Maintain proper plant spacing and stake plants to improve air circulation",
+      "Apply mulch to prevent soil splash carrying spores onto lower leaves"
+    ],
+    "recovery_time": "3–4 weeks with consistent fungicide applications and dry weather"
+  },
+  "Tomato___Spider_Mites Two-spotted_spider_mite": {
+    "display_name": "Spider Mites (Two-Spotted Spider Mite)",
+    "scientific_name": "Tetranychus urticae",
+    "severity": "Medium",
+    "is_healthy": false,
+    "description": "The Two-Spotted Spider Mite (Tetranychus urticae) is a tiny arachnid pest (not an insect) that feeds on plant cells by piercing leaf tissue and extracting contents, leading to a characteristic stippled, bronze appearance. Populations explode rapidly in hot, dry conditions and can cause severe damage within days. Heavy infestations produce visible webbing on the undersides of leaves and between stems.",
+    "symptoms": [
+      "Fine stippling or bronzing on the upper leaf surface due to cell damage",
+      "Yellowing, browning, and premature drop of leaves in severe infestations",
+      "Fine silky webbing visible on the undersides of leaves and between stems",
+      "Tiny (0.3–0.5 mm) moving dots visible on the underside of leaves (the mites themselves)",
+      "Plant stunting and reduced fruit set in severe, prolonged infestations"
+    ],
+    "immediate_actions": [
+      "Spray plants forcefully with a strong jet of water to dislodge mites from leaves",
+      "Apply a miticide (acaricide) or insecticidal soap spray immediately",
+      "Remove heavily infested leaves and dispose of them away from the garden",
+      "Increase irrigation to raise humidity, as spider mites thrive in dry conditions"
+    ],
+    "chemical_treatment": [
+      "Apply abamectin (e.g., Agri-Mek) as an effective miticide, following label directions",
+      "Use bifenazate (e.g., Acramite) for rapid knockdown of mite populations",
+      "Apply spiromesifen (e.g., Oberon) which affects both adults and eggs",
+      "Rotate between different miticide classes to prevent resistance development"
+    ],
+    "organic_treatment": [
+      "Apply insecticidal soap spray (potassium salts of fatty acids) directly on mites and undersides of leaves",
+      "Use neem oil (azadirachtin) solution (2%) every 5–7 days to disrupt mite life cycle",
+      "Release predatory mites (Phytoseiulus persimilis or Neoseiulus californicus) as biological control",
+      "Apply rosemary oil or peppermint oil-based sprays as natural repellents"
+    ],
+    "prevention": [
+      "Monitor plants regularly, especially the undersides of leaves, for early detection",
+      "Maintain adequate soil moisture and avoid drought stress which favors mite outbreaks",
+      "Avoid excessive use of broad-spectrum insecticides that kill natural predators",
+      "Introduce and conserve natural predators such as predatory mites and ladybugs",
+      "Remove weeds around the garden that can serve as alternative mite host plants"
+    ],
+    "recovery_time": "1–3 weeks with effective miticide treatment and improved plant care conditions"
+  },
+  "Tomato___Target_Spot": {
+    "display_name": "Target Spot",
+    "scientific_name": "Corynespora cassiicola",
+    "severity": "Medium",
+    "is_healthy": false,
+    "description": "Target Spot is a fungal disease caused by Corynespora cassiicola that affects tomato leaves, stems, and fruit. It is particularly problematic in tropical and subtropical regions with warm temperatures (25–30°C) and high humidity. The disease can cause significant defoliation and fruit blemishes, leading to reduced marketability and yield losses.",
+    "symptoms": [
+      "Circular to irregular brown lesions with concentric ring patterns ('target' or 'bull's-eye' appearance)",
+      "Lesions may have a yellow halo and can enlarge to 1 cm or more in diameter",
+      "Dark brown, sunken spots on fruit that may be confused with Early Blight",
+      "Leaf spots coalesce under heavy infection, leading to large necrotic areas and defoliation",
+      "Stem lesions appear as dark, elongated cankers that can girdle and kill affected stems"
+    ],
+    "immediate_actions": [
+      "Remove and destroy infected leaves and plant debris immediately",
+      "Apply a broad-spectrum fungicide promptly upon symptom observation",
+      "Improve ventilation and reduce canopy humidity by pruning lower leaves",
+      "Avoid overhead irrigation to minimize leaf wetness duration"
+    ],
+    "chemical_treatment": [
+      "Apply azoxystrobin (e.g., Quadris) every 7–14 days for systemic protection",
+      "Use chlorothalonil (e.g., Bravo) as a protective spray every 7 days in wet conditions",
+      "Apply fluxapyroxad + pyraclostrobin (e.g., Priaxor) for broad-spectrum fungal control",
+      "Use boscalid + pyraclostrobin (e.g., Pristine) for curative and protective activity"
+    ],
+    "organic_treatment": [
+      "Apply copper-based fungicides (copper hydroxide) every 7 days as a protectant",
+      "Use Bacillus subtilis (e.g., Serenade) biocontrol sprays preventatively",
+      "Apply neem oil (2%) every 7–10 days to suppress fungal sporulation",
+      "Use Trichoderma harzianum-based biofungicides to compete with the pathogen"
+    ],
+    "prevention": [
+      "Practice crop rotation of at least 2–3 years with non-host crops",
+      "Plant in well-drained soils and avoid fields with a history of the disease",
+      "Use resistant tomato varieties where commercially available",
+      "Stake plants and remove lower leaves to improve air circulation within the canopy",
+      "Apply mulch to reduce soil splash and eliminate plant debris after harvest"
+    ],
+    "recovery_time": "3–4 weeks with proper fungicide management and favorable dry conditions"
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "display_name": "Tomato Yellow Leaf Curl Virus",
+    "scientific_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "severity": "Critical",
+    "is_healthy": false,
+    "description": "Tomato Yellow Leaf Curl Virus (TYLCV) is a devastating viral disease transmitted exclusively by the silverleaf whitefly (Bemisia tabaci). It is one of the most economically important tomato diseases worldwide, particularly in tropical and subtropical regions. Plants infected early in their growth may suffer near-total yield loss, and there is no cure once a plant is infected.",
+    "symptoms": [
+      "Upward and inward curling of young leaves (cupping), giving a spoon-like appearance",
+      "Yellowing (chlorosis) of leaf margins and interveinal areas on young leaves",
+      "Stunted plant growth with shortened internodes, resulting in a compact, bushy appearance",
+      "Reduced flower set and flower drop, leading to severely diminished fruit production",
+      "Older leaves may remain relatively normal while new growth is severely affected"
+    ],
+    "immediate_actions": [
+      "Remove and destroy infected plants immediately to reduce the virus reservoir",
+      "Apply insecticides to control whitefly populations and prevent further spread",
+      "Install reflective mulches and yellow sticky traps to deter and monitor whiteflies",
+      "Establish insect-proof netting around young seedlings and transplants"
+    ],
+    "chemical_treatment": [
+      "Apply imidacloprid (e.g., Admire Pro) as a soil drench or foliar spray to control whiteflies",
+      "Use thiamethoxam (e.g., Actara) or acetamiprid for systemic whitefly control",
+      "Apply spirotetramat (e.g., Movento) for control of whitefly nymphs and adults",
+      "Rotate insecticide classes to prevent whitefly resistance development"
+    ],
+    "organic_treatment": [
+      "Apply insecticidal soap or neem oil sprays every 5–7 days to reduce whitefly populations",
+      "Use reflective silver or aluminum mulches to repel whiteflies from young plants",
+      "Release natural enemies such as Encarsia formosa (parasitic wasp) for biological whitefly control",
+      "Apply kaolin clay sprays to create a physical barrier on plant surfaces"
+    ],
+    "prevention": [
+      "Plant TYLCV-resistant or tolerant tomato varieties (e.g., Shanty, TY hybrids)",
+      "Use insect-proof nets (50-mesh screens) in seedling nurseries and transplant areas",
+      "Control whitefly populations aggressively before and after transplanting",
+      "Eradicate weed hosts of both the virus and the whitefly vector around fields",
+      "Implement a crop-free period between seasons to break the disease and vector cycle"
+    ],
+    "recovery_time": "No recovery — infected plants should be removed; prevent spread by controlling whitefly vectors"
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "display_name": "Tomato Mosaic Virus",
+    "scientific_name": "Tomato Mosaic Virus (ToMV)",
+    "severity": "High",
+    "is_healthy": false,
+    "description": "Tomato Mosaic Virus (ToMV) is a highly stable and persistent plant virus belonging to the Tobamovirus genus. Unlike many other plant viruses, it does not require an insect vector and spreads primarily through mechanical contact — via contaminated hands, tools, clothing, and infected plant debris. The virus can survive for years in dried plant material and soil, making it extremely difficult to eradicate once established.",
+    "symptoms": [
+      "Mosaic pattern of light and dark green (or yellow and green) patches on leaves",
+      "Leaf distortion, curling, and blistering with areas of raised dark green tissue",
+      "Stunted plant growth and reduced vigor, particularly in young plants",
+      "Fruit may show internal browning, uneven ripening, or a mottled external appearance",
+      "Necrotic streaking on stems and petioles in some strains (Tomato Streak)"
+    ],
+    "immediate_actions": [
+      "Remove and destroy confirmed infected plants immediately",
+      "Wash hands thoroughly with soap and water before and after handling plants",
+      "Disinfect all tools with 10% trisodium phosphate (TSP) solution or 1.5% sodium hypochlorite",
+      "Do not use tobacco products near plants, as tobacco can carry related tobamoviruses"
+    ],
+    "chemical_treatment": [
+      "There are no effective chemical cures for viral infections in plants",
+      "Apply insecticides only if aphids or other vectors are also present as secondary pests",
+      "Use mineral oil sprays to reduce mechanical virus transmission during plant manipulation",
+      "Focus management on prevention and sanitation rather than chemical control"
+    ],
+    "organic_treatment": [
+      "Apply diluted skim milk spray (1 part milk to 9 parts water) to tools and hands to inactivate the virus",
+      "Use neem oil or insecticidal soap to control any secondary insect pests",
+      "Maintain plant vigor with balanced organic fertilization to slow symptom progression",
+      "Remove infected plant material and deep-bury or burn rather than composting"
+    ],
+    "prevention": [
+      "Use certified virus-free seeds or treat seeds with trisodium phosphate (TSP) solution",
+      "Plant resistant tomato varieties carrying the Tm-2 or Tm-2² resistance genes",
+      "Practice strict hygiene — wash hands and disinfect tools between plants and rows",
+      "Eliminate solanaceous weeds that can serve as virus reservoirs",
+      "Avoid replanting tomatoes in fields with a known history of ToMV without thorough soil preparation"
+    ],
+    "recovery_time": "No recovery for infected plants; remove them and protect remaining healthy plants through strict sanitation"
+  },
+  "Tomato___Healthy": {
+    "display_name": "Healthy",
+    "scientific_name": null,
+    "severity": "None",
+    "is_healthy": true,
+    "description": "Your tomato plant appears healthy with no visible signs of disease, pest damage, or nutritional deficiency. Healthy tomato plants have vibrant, deep green foliage, sturdy stems, and active growth. Continue your current care routine and monitor regularly to maintain plant health throughout the growing season.",
+    "symptoms": [
+      "Vibrant, deep green leaves without spots, lesions, or discoloration",
+      "Sturdy stems with good turgor and upright posture",
+      "Active growth with normal internode spacing",
+      "Abundant, healthy flower and fruit set",
+      "No visible pest activity or webbing on leaves or stems"
+    ],
+    "immediate_actions": [
+      "Continue regular monitoring of plants at least twice a week for early signs of disease or pests",
+      "Maintain consistent watering, fertilization, and staking routines",
+      "Remove any yellowing lower leaves as a standard sanitation practice",
+      "Keep the area around plants free of weeds and fallen debris"
+    ],
+    "chemical_treatment": [
+      "No chemical treatment needed for healthy plants",
+      "Consider preventative applications of copper fungicides if disease pressure in the area is high",
+      "Avoid unnecessary pesticide applications to preserve beneficial insects"
+    ],
+    "organic_treatment": [
+      "Apply a balanced organic fertilizer to support continued vigorous growth",
+      "Use compost tea as a foliar spray to boost plant immunity and beneficial microorganisms",
+      "Apply neem oil preventatively every 2–3 weeks to deter pests and fungal spores"
+    ],
+    "prevention": [
+      "Water consistently at the base of plants using drip irrigation to keep foliage dry",
+      "Mulch around the base of plants to conserve moisture and prevent soil splash",
+      "Practice crop rotation annually to prevent soilborne disease buildup",
+      "Maintain proper plant nutrition with regular soil testing and balanced fertilization",
+      "Introduce and conserve beneficial insects (ladybugs, lacewings) for natural pest control",
+      "Ensure proper plant spacing for adequate air circulation throughout the canopy"
+    ],
+    "recovery_time": "N/A — plant is healthy; focus on maintaining current conditions"
+  }
+}
