@@ -36,6 +36,9 @@ backend/uploads/
 npm-debug.log*
 yarn-debug.log*
 
+# Markdown files
+*.md
+
 # OS
 .DS_Store
 Thumbs.db
