@@ -36,8 +36,9 @@ backend/uploads/
 npm-debug.log*
 yarn-debug.log*
 
-# Markdown files
+# Markdown files (exclude all except test cases)
 *.md
+!docs/test_cases/*.md
 
 # OS
 .DS_Store
