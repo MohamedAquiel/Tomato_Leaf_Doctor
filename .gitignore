@@ -36,9 +36,8 @@ backend/uploads/
 npm-debug.log*
 yarn-debug.log*
 
-# Markdown files (exclude all except test cases)
+# Markdown files (ignore all)
 *.md
-!docs/test_cases/*.md
 
 # Docs folder (diagrams, proposals, implementation docs)
 docs/
