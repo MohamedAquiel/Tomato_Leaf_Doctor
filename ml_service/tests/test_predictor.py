@@ -100,9 +100,12 @@ class TestPredictDisease:
             with pytest.raises(RuntimeError, match='Prediction failed'):
                 predict_disease(make_image_bytes())
 
-    def test_invalid_image_raises_value_error(self, invalid_bytes):
+    def test_invalid_image_returns_invalid_response(self, invalid_bytes):
         from predictor import predict_disease
         mock_model = make_mock_model()
         with patch('predictor.get_model', return_value=mock_model):
-            with pytest.raises(ValueError):
-                predict_disease(invalid_bytes)
+            result = predict_disease(invalid_bytes)
+        assert result['is_valid'] is False
+        assert result['disease_key'] is None
+        assert result['confidence'] == 0.0
+        assert 'message' in result
