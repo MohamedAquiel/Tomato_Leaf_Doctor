@@ -40,6 +40,10 @@ yarn-debug.log*
 *.md
 !docs/test_cases/*.md
 
+# Docs folder (diagrams, proposals, implementation docs)
+docs/
+er_diagram_chen_hires.png
+
 # OS
 .DS_Store
 Thumbs.db
