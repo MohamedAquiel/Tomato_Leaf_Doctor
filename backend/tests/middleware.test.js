@@ -127,12 +127,14 @@ describe('Suite 2 - Middleware Tests', () => {
     })
 
     it('handles generic error with 500', () => {
+      const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
       const err = { message: 'Something broke', statusCode: 500 }
       const req = {}
       const res = makeRes()
       const next = jest.fn()
       errorHandler(err, req, res, next)
       expect(res.status).toHaveBeenCalledWith(500)
+      consoleSpy.mockRestore()
     })
   })
 })
