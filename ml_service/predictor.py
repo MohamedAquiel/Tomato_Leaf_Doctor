@@ -23,6 +23,9 @@ def preprocess_image(image_bytes: bytes) -> np.ndarray:
     
     try:
         image = Image.open(BytesIO(image_bytes))
+        image.verify()  # verify it's a real, non-truncated image
+        # Re-open after verify (verify closes/corrupts the fp)
+        image = Image.open(BytesIO(image_bytes))
     except Exception as exc:
         raise ValueError(f"Could not decode image bytes: {exc}") from exc
 
@@ -45,8 +48,22 @@ def preprocess_image(image_bytes: bytes) -> np.ndarray:
 
 def predict_disease(image_bytes: bytes) -> dict:
     
-
-    input_array = preprocess_image(image_bytes)
+    try:
+        input_array = preprocess_image(image_bytes)
+    except ValueError as exc:
+        logger.warning("Invalid or unreadable image file: %s", exc)
+        return {
+            "is_valid": False,
+            "disease_key": None,
+            "display_name": None,
+            "confidence": 0.0,
+            "is_healthy": False,
+            "solution": None,
+            "message": (
+                "The uploaded file could not be read as an image. "
+                "Please upload a valid image file (JPEG, PNG, etc.) of a tomato leaf."
+            ),
+        }
 
 
     try:
@@ -63,6 +80,21 @@ def predict_disease(image_bytes: bytes) -> dict:
     confidence: float = round(float(probabilities[predicted_index]) * 100, 2)
     is_healthy: bool = disease_key == "Tomato___Healthy"
 
+    # If confidence is too low, the image is likely not a tomato leaf at all
+    CONFIDENCE_THRESHOLD: float = 60.0
+    if confidence < CONFIDENCE_THRESHOLD:
+        return {
+            "is_valid": False,
+            "disease_key": None,
+            "display_name": None,
+            "confidence": confidence,
+            "is_healthy": False,
+            "solution": None,
+            "message": (
+                "The uploaded image does not appear to be a tomato leaf. "
+                "Please upload a clear photo of a tomato leaf for accurate results."
+            ),
+        }
 
     display_name: str = disease_key.replace("___", ": ").replace("_", " ")
 
@@ -85,6 +117,7 @@ def predict_disease(image_bytes: bytes) -> dict:
         logger.error("Failed to parse solutions.json: %s", exc)
 
     return {
+        "is_valid": True,
         "disease_key": disease_key,
         "display_name": display_name,
         "confidence": confidence,
