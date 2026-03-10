@@ -26,6 +26,27 @@ const styles = {
     color: '#b91c1c', fontSize: '0.88rem', padding: '0.75rem 1rem', marginBottom: '1.25rem',
     display: 'flex', alignItems: 'flex-start', gap: '0.5rem',
   },
+  success: {
+    background: 'linear-gradient(135deg, #f0f7f4 0%, #d8f3dc 100%)',
+    borderRadius: '14px', padding: '2.5rem 2rem', textAlign: 'center',
+    animation: 'fadeInUp 0.4s ease both',
+  },
+  successIcon: {
+    width: '72px', height: '72px', background: '#2d6a4f', borderRadius: '50%',
+    display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem',
+    boxShadow: '0 8px 24px rgba(45,106,79,0.3)',
+  },
+  successTitle: { fontSize: '1.5rem', fontWeight: '800', color: '#1b4332', margin: '0 0 0.5rem' },
+  successMsg: { fontSize: '0.93rem', color: '#40916c', margin: '0 0 1.5rem', lineHeight: 1.6 },
+  successSub: { fontSize: '0.82rem', color: '#6b7280', margin: 0 },
+  progressBar: {
+    height: '4px', background: '#b7dfc9', borderRadius: '999px',
+    overflow: 'hidden', margin: '1.25rem 0 0',
+  },
+  progressFill: {
+    height: '100%', background: '#2d6a4f', borderRadius: '999px',
+    animation: 'shrink 2.5s linear forwards',
+  },
   form: { display: 'flex', flexDirection: 'column' },
   footer: { textAlign: 'center', marginTop: '1.5rem', fontSize: '0.9rem', color: '#6c757d' },
   link: { color: '#2d6a4f', fontWeight: '600', textDecoration: 'none' },
@@ -40,6 +61,8 @@ const RegisterPage = () => {
   const [errors, setErrors] = useState({})
   const [apiError, setApiError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [registered, setRegistered] = useState(false)
+  const [userName, setUserName] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -68,12 +91,42 @@ const RegisterPage = () => {
     setLoading(true)
     try {
       await auth.register({ name: form.name.trim(), email: form.email, password: form.password })
-      navigate('/predict')
+      setUserName(form.name.trim().split(' ')[0])
+      setRegistered(true)
+      setTimeout(() => navigate('/predict'), 2500)
     } catch (err) {
       setApiError(err?.response?.data?.message || err?.message || 'Registration failed. Please try again.')
     } finally {
       setLoading(false)
     }
+  }
+
+  if (registered) {
+    return (
+      <div style={styles.page}>
+        <style>{`
+          @keyframes shrink { from { width: 100%; } to { width: 0%; } }
+          @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+          @keyframes checkPop { 0% { transform: scale(0); opacity: 0; } 70% { transform: scale(1.2); } 100% { transform: scale(1); opacity: 1; } }
+        `}</style>
+        <div style={{ ...styles.card, ...styles.success }}>
+          <div style={styles.successIcon}>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" style={{ animation: 'checkPop 0.5s ease 0.2s both' }}>
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h2 style={styles.successTitle}>Welcome, {userName}!</h2>
+          <p style={styles.successMsg}>
+            Your account has been created successfully.<br />
+            You are now logged in and ready to diagnose your tomato plants.
+          </p>
+          <p style={styles.successSub}>Redirecting to Predict page...</p>
+          <div style={styles.progressBar}>
+            <div style={styles.progressFill} />
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
