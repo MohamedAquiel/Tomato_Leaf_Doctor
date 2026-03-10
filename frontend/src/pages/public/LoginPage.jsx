@@ -74,7 +74,15 @@ const LoginPage = () => {
       await auth.login({ email: form.email, password: form.password })
       navigate(from, { replace: true })
     } catch (err) {
-      setApiError(err?.response?.data?.message || err?.message || 'Login failed. Please try again.')
+      const status = err?.response?.status
+      const serverMsg = err?.response?.data?.error || err?.response?.data?.message
+      if (status === 401) {
+        setApiError('Invalid email or password. Please try again.')
+      } else if (status === 403) {
+        setApiError('Your account has been deactivated. Please contact support.')
+      } else {
+        setApiError(serverMsg || err?.message || 'Login failed. Please try again.')
+      }
     } finally {
       setLoading(false)
     }
