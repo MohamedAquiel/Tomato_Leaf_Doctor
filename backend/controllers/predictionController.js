@@ -35,6 +35,18 @@ const predict = async (req, res) => {
       fs.unlinkSync(filePath);
     }
 
+    // ML service returned 422 = image is not a valid tomato leaf / unreadable file
+    if (err.response?.status === 422) {
+      const detail =
+        err.response?.data?.detail ||
+        'The uploaded image is not valid. Please upload a clear photo of a tomato leaf.';
+      return res.status(422).json({
+        success: false,
+        is_valid: false,
+        message: detail,
+      });
+    }
+
     const mlError =
       err.response?.data?.detail ||
       err.response?.data?.error ||
@@ -47,6 +59,20 @@ const predict = async (req, res) => {
       error: isConnectionError
         ? 'The AI prediction service is currently offline. Please try again later.'
         : `Prediction service error: ${mlError}`,
+    });
+  }
+
+  // If the ML service flagged the image as invalid via is_valid flag (fallback)
+  if (mlResult.is_valid === false) {
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+    }
+    return res.status(422).json({
+      success: false,
+      is_valid: false,
+      message:
+        mlResult.message ||
+        'The uploaded image does not appear to be a tomato leaf. Please upload a clear photo of a tomato leaf for accurate results.',
     });
   }
 
