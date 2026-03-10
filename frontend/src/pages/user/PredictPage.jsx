@@ -115,6 +115,7 @@ const PredictPage = () => {
       formData.append('file', file)
       const res = await createPrediction(formData)
       const prediction = res.data || res
+
       setResult(prediction)
       if (user) {
         const name = prediction?.displayName || 'Unknown'
@@ -129,8 +130,8 @@ const PredictPage = () => {
       }
     } catch (err) {
       setError(
-        err?.response?.data?.error ||
         err?.response?.data?.message ||
+        err?.response?.data?.error ||
         'Something went wrong. Please try again.'
       )
     } finally {
