@@ -172,17 +172,32 @@ async def predict(file: UploadFile = File(...)):
             len(image_bytes),
         )
         result = predict_disease(image_bytes)
-        logger.info(
-            "Inference complete. Predicted class: '%s' (confidence: %.4f).",
-            result.get("prediction", "unknown"),
-            result.get("confidence", 0.0),
-        )
     except Exception as exc:
         logger.error("Inference error for file '%s': %s", file.filename, exc)
         raise HTTPException(
             status_code=500,
             detail=f"An error occurred during disease prediction: {str(exc)}",
         ) from exc
+
+    # If the image was unreadable or not a tomato leaf, return 422 instead of 500
+    if result.get("is_valid") is False:
+        logger.warning(
+            "File '%s' rejected as invalid: %s", file.filename, result.get("message")
+        )
+        raise HTTPException(
+            status_code=422,
+            detail=result.get(
+                "message",
+                "The uploaded file is not a valid tomato leaf image.",
+            ),
+        )
+
+    logger.info(
+        "Inference complete for '%s'. Predicted: '%s' (confidence: %.2f%%).",
+        file.filename,
+        result.get("disease_key", "unknown"),
+        result.get("confidence", 0.0),
+    )
 
     return {
         "status": "success",
